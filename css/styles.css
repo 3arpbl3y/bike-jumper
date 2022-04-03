@@ -1,0 +1,58 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+
+#bike {
+  width: 50px;
+  height: 50px;
+  background-image: url(/images/bike.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+  /* left: 50px; */
+}
+
+#wheel {
+  width: 55px;
+  height: 25px;
+  background-image: url(/images/wheel.png);
+  background-size: 55px 25px;
+  position: relative;
+  top: 125px;
+  left: 550px;
+  animation: wheelMove 1.5s infinite linear;
+}
+
+@keyframes wheelMove {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  50% {
+    top: 50px;
+  }
+  80% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
